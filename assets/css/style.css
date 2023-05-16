@@ -61,3 +61,33 @@ header {
 .production-container p {
     margin: 3vh 0;
 }
+
+.heritage .container-heritage {
+    height: 100vh;
+}
+
+.coniferes {
+    background-image: url(../img/api-conifères.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+}
+
+.fleurs {
+    background-image: url(../img/api-fleurs.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+}
+
+.quart {
+    width: 50vw;
+}
+
+.container-heritage h3 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 6vh;
+}
