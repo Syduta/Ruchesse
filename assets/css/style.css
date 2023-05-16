@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar,
+.navbar a {
+    background-color: #C7962E;
+}
+
+.banner {
+    margin-top: 8vh;
+    height: 92vh;
+    width: 100vw;
+    background-image: url('../img/miel.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: beige;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.presentation {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.production {
+    height: 100vh;
+    background: rgb(199, 150, 46);
+    background: linear-gradient(90deg, rgba(199, 150, 46, 1) 0%, rgba(245, 245, 220, 1) 35%);
+}
+
+.production h2 {
+    padding-top: 8vh;
+}
+
+.production img {
+    width: 25vw;
+}
+
+.production .production-container {
+    width: 50vw;
+}
+
+.production-container p {
+    margin: 3vh 0;
+}
