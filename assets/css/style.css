@@ -46,8 +46,8 @@ header {
     background: linear-gradient(90deg, rgba(199, 150, 46, 1) 0%, rgba(245, 245, 220, 1) 35%);
 }
 
-.production h2 {
-    padding-top: 8vh;
+h2 {
+    padding: 5vh 0;
 }
 
 .production img {
@@ -59,7 +59,7 @@ header {
 }
 
 .production-container p {
-    margin: 3vh 0;
+    margin: 2vh 0;
 }
 
 .heritage .container-heritage {
@@ -90,4 +90,20 @@ header {
     text-align: center;
     width: 100%;
     margin-bottom: 6vh;
+}
+
+.heritage p {
+    padding: 0 4rem;
+}
+
+.samples img {
+    border-radius: 5%;
+}
+
+.samples button {
+    margin-bottom: 2vh;
+}
+
+.contact button {
+    margin-top: 2vh;
 }
