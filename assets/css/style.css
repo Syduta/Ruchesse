@@ -4,6 +4,97 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
+.btn {
+    background-color: #C7962E;
+    color: white;
+    border: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #C7962E;
+    border: solid 2px #C7962E;
+}
+
+/** arrow down **/
+.center-con {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    bottom: -25vh;
+}
+
+.round span {
+    z-index: 999;
+    height: 3px;
+    margin: 1px;
+    width: 30px;
+    background: white;
+    transition: 0.4s ease;
+}
+
+.round span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+.round span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+.round span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+.round span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+
+/** end arrow down **/
 .navbar {
     position: fixed;
     width: 100vw;
@@ -23,7 +114,8 @@
     background-size: cover;
 }
 
-header {
+header,
+.samples {
     background-color: beige;
 }
 
@@ -43,11 +135,12 @@ header {
 .production {
     height: 100vh;
     background: rgb(199, 150, 46);
-    background: linear-gradient(90deg, rgba(199, 150, 46, 1) 0%, rgba(245, 245, 220, 1) 35%);
+    background: linear-gradient(90deg, rgba(199, 150, 46, 1) 0%, rgba(245, 245, 220, 1) 55%);
 }
 
 h2 {
     padding: 5vh 0;
+    text-transform: capitalize;
 }
 
 .production img {
@@ -62,8 +155,18 @@ h2 {
     margin: 2vh 0;
 }
 
+.heritage,
+form input,
+form textarea {
+    background: rgb(199, 150, 46);
+    background: linear-gradient(90deg, rgba(199, 150, 46, 1) 0%, rgba(245, 245, 220, 1) 55%);
+}
+
 .heritage .container-heritage {
     height: 100vh;
+    background-image: url(../img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .coniferes {
@@ -104,6 +207,26 @@ h2 {
     margin-bottom: 2vh;
 }
 
-.contact button {
+.contact button,
+.contact .form-check-input {
     margin-top: 2vh;
+}
+
+.contact button {
+    margin-bottom: 3vh;
+    background-color: #C7962E;
+    color: white;
+    border: white;
+}
+
+.form-check-label {
+    margin-top: 1vh;
+}
+
+footer {
+    background-color: #C7962E;
+}
+
+footer .socials {
+    background-color: beige;
 }
